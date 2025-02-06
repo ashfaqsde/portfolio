@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Mohamed Ashfaq</title>
+  <link rel="stylesheet" href="App.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<!-- Quick Links Title Bar -->
+<div id="quick-links">
+    <nav>
+      <a href="#summary" title="Summary"><i class="fas fa-info-circle"></i></a>
+      <a href="#education" title="Education"><i class="fas fa-graduation-cap"></i></a>
+      <a href="#skills" title="Skills"><i class="fas fa-code"></i></a>
+      <a href="#projects" title="Projects"><i class="fas fa-project-diagram"></i></a>
+      <a href="#certifications" title="Certifications"><i class="fas fa-award"></i></a>
+      <a href="#resume" title="Resume"><i class="fas fa-file-alt"></i></a>
+      <a href="#contact" title="Contact"><i class="fas fa-user"></i></a>
+    </nav>
+  </div>
+    <!-- Header Section -->
+    <header>
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+      <img src="assets/profile.jpg" alt="Profile Photo" width="150" height="150" style="border-radius: 50%;">
+  </div>
+
+  <!-- Name -->
+  <h1 style="text-align: center;">Mohamed Ashfaq</h1>
+
+  <!-- Job Title -->
+  <p style="text-align: center;">Full-Stack Developer</p>
+
+  <!-- Additional Content (if needed) -->
+  <div style="display: flex; justify-content: center;">
+    <!-- Add any additional content here -->
+     
+  </div>
+</header>
+
+    <!-- Summary Section -->
+    <section id="summary">
+        <br>
+      <h2>       <i class="fas fa-info-circle"></i> <!-- Font Awesome Info Circle Icon -->
+        Summary</h2>
+      <p>
+        Blockchain and Full-Stack Developer with experience in building decentralized applications using React.js, Web3.js, Solidity, and MySQL.
+        Successfully deployed a blockchain-based to-do list app with improved transaction efficiency.
+        Strong problem-solving skills and expertise in optimizing database queries for scalable applications.
+      </p>
+    </section>
+    <br>
+
+
+<!-- Education Section -->
+<section id="education">
+    <br>
+    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+    <div class="education-item">
+      <h3><strong>Master of Computer Applications (2025)</strong></h3>
+      <p><strong>Institution:</strong> BSA Crescent Institute of Science and Technology</p>
+      <button onclick="toggleDropdown('mca-details', this)">Show Details</button>
+      <div id="mca-details" class="dropdown-content">
+        <p>CGPA: 8.9/10</p>
+        <p>Description: Advanced coursework in blockchain, decentralized systems, and full-stack development. Hands-on experience with Ethereum, Solidity, and Web3.js.</p>
+      </div>
+    </div>
+    <div class="education-item">
+      <h3>BCA (2023)</h3>
+      <p><strong>Institution:</strong> CMS College of Science and Commerce</p>
+      <button onclick="toggleDropdown('bca-details', this)">Show Details</button>
+      <div id="bca-details" class="dropdown-content">
+        <p>CGPA: 8.5/10</p>
+        <p>Description: Core subjects included programming, database management, and web development. Developed a scalable social media platform as part of a capstone project.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- JavaScript for Toggle Dropdown -->
+  <script>
+    // Function to toggle dropdown visibility and update button text
+    function toggleDropdown(id, button) {
+      const dropdown = document.getElementById(id);
+      if (dropdown.style.display === "block") {
+        dropdown.style.display = "none";
+        button.textContent = "Show Details"; // Change button text back to "Show Details"
+      } else {
+        dropdown.style.display = "block";
+        button.textContent = "Hide Details"; // Change button text to "Hide Details"
+      }
+    }
+  </script>
+  <br>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <br>
+      <h2> <i class="fas fa-code"></i> <!-- Code Brackets Icon -->
+        Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-box">
+          <strong>Programming Languages</strong>
+          <div class="skills-list">
+            <span class="skill-item">JavaScript</span>
+            <span class="skill-item">Solidity</span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <strong>Front-End</strong>
+          <div class="skills-list">
+            <span class="skill-item">HTML</span>
+            <span class="skill-item">CSS</span>
+            <span class="skill-item">React.js</span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <strong>Back-End</strong>
+          <div class="skills-list">
+            <span class="skill-item">Node.js</span>
+            <span class="skill-item">MySQL</span>
+            <span class="skill-item">Ethereum</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <br>
+        <h2>
+            <i class="fas fa-project-diagram"></i> <!-- Project Diagram Icon -->
+            Projects
+        </h2>
+      
+        <!-- AI Assisted Career Guidance and Eligibility Prediction System -->
+        <a
+          href="https://github.com/ashfaqsde/sample-project"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-box"
+        >
+          <div>
+            <h3>
+              AI Assisted Career Prediction System
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16" style="margin-left: 10px; vertical-align: middle;">
+                <path d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.81-3.337L9.42 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+              </svg>
+            </h3>
+            <p><strong>Duration:</strong> Jan 2025 - May 2025</p>
+            <p>Building an AI-powered system to assess skills and recommend career paths.</p>
+            <p>Developing a predictive model for job eligibility based on skills and academics.</p>
+            <p>Designing an interactive dashboard for career insights and tracking.</p>
+          </div>
+        </a>
+      
+        <!-- Blockchain Based To-Do List App -->
+        <a
+          href="https://github.com/ashfaqsde/sample-project"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-box"
+        >
+          <div>
+            <h3>
+              Blockchain Based To-Do List App
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16" style="margin-left: 10px; vertical-align: middle;">
+                <path d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.81-3.337L9.42 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+              </svg>
+            </h3>
+            <p><strong>Duration:</strong> Jun 2024 - Dec 2024</p>
+            <p>Developed a decentralized to-do list dApp using Solidity, Ethereum, and Web3.js.</p>
+            <p>Integrated MetaMask authentication, ensuring secure transactions.</p>
+            <p>Optimized smart contract execution, reducing gas fees by 20%.</p>
+          </div>
+        </a>
+      
+        <!-- Social Media Web Application -->
+        <a
+          href="https://github.com/ashfaqsde/sample-project"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-box"
+        >
+          <div>
+            <h3>
+              Social Media Web Application
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16" style="margin-left: 10px; vertical-align: middle;">
+                <path d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.81-3.337L9.42 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
+              </svg>
+            </h3>
+            <p><strong>Duration:</strong> Feb 2023 - Apr 2023</p>
+            <p>Built a scalable social platform using HTML, CSS, SCSS, JavaScript, and MySQL.</p>
+            <p>Enhanced user engagement by 35% through interactive UI.</p>
+            <p>Optimized database queries, reducing data retrieval time by 40%.</p>
+          </div>
+        </a>
+      </section>
+      <br>
+
+
+<!-- Certifications Section -->
+<section id="certifications">
+    <br>
+    <h2>
+        <i class="fas fa-award"></i> <!-- Award Icon -->
+        Certifications
+    </h2>
+
+    <!-- Google Data Analytics Certification -->
+    <div class="certification-item">
+        <h3>Google Coursera - Google Data Analytics</h3>
+        <p><strong>Status:</strong> Expected: Apr 2025</p>
+        <button onclick="toggleDetails('google-data-analytics', this)">
+            <span>▼</span> <!-- Arrow Down -->
+        </button>
+        <div id="google-data-analytics" class="dropdown-content">
+            <img
+class="certificate-image"
+src="assets/certificates/google-data-analytics.jpg"
+alt="Google Data Analytics Certificate"
+/>
+            <p>
+                A comprehensive course covering data analysis techniques, tools, and methodologies.
+            </p>
+        </div>
+    </div>
+
+    <!-- Fundamentals of Digital Marketing Certification -->
+    <div class="certification-item">
+        <h3>Google Digital Garage - Fundamentals of Digital Marketing</h3>
+        <p><strong>Status:</strong> Completed: Feb 2023</p>
+        <button onclick="toggleDetails('digital-marketing', this)">
+            <span>▼</span> <!-- Arrow Down -->
+        </button>
+        <div id="digital-marketing" class="dropdown-content">
+            <img
+            class="certificate-image"
+            src="assets/certificates/Fundamentals of Digital Marketing Certificate.jpg"
+            alt="Google Digital Marketing Certificate"
+            />
+            <p>
+                A foundational course in digital marketing strategies and tools.
+            </p>
+        </div>
+    </div>
+
+    <!-- Technical Support Fundamentals Certification -->
+    <div class="certification-item">
+        <h3>Google Coursera - Technical Support Fundamentals</h3>
+        <p><strong>Status:</strong> Completed: Oct 2022</p>
+        <button onclick="toggleDetails('technical-support', this)">          
+            <span>▼</span> <!-- Arrow Down -->
+        </button>
+        <div id="technical-support" class="dropdown-content">
+            <img
+class="certificate-image"
+src="assets/certificates/Technical Support Fundamentals.jpg"
+alt="Google Technical Support Certificate"
+/>
+            <p>
+                This certification introduced me to IT support concepts, including troubleshooting,
+                networking, operating systems, and system administration.
+            </p>
+        </div>
+    </div>
+    </div>
+</section>
+<br>
+
+<script>
+    function toggleDetails(id, button) {
+        const details = document.getElementById(id);
+        const arrow = button.querySelector('span');
+
+        if (details.style.display === "none" || details.style.display === "") {
+            details.style.display = "block";
+            arrow.textContent = "▲"; // Change to arrow up
+        } else {
+            details.style.display = "none";
+            arrow.textContent = "▼"; // Change to arrow down
+        }
+    }
+</script>
+
+
+
+        <!-- Download Resume Section -->
+        <section id="resume">
+            <br>
+            <h2>  <i class="fas fa-file-alt"></i> Resume</h2>
+            <p>Feel free to download my resume and contact me for any inquiries.</p><br>
+            <a href="assets/resume/Mohamed_Ashfaq_Resume.pdf" download class="resume-button">Download Resume</a>
+          </section>
+
+
+
+<!-- Contact Section -->
+<section id="contact">
+
+    <h2> <i class="fas fa-user"></i> <!-- User Icon for Contacts -->Contacts</h2>
+    <div class="contact-grid">
+      <!-- Call Option -->
+      <div id="contact">
+        <div class="contact-grid">
+          <!-- Call Button -->
+          <div class="contact-box">
+            <button class="call-button" onclick="window.location.href='tel:+918903707362';">
+              Call
+            </button>
+          </div>
+      
+          <!-- Email Button -->
+          <div class="contact-box">
+            <button class="email-button" onclick="window.location.href='mailto:ashfaqsde@gmail.com';">
+              Email
+            </button>
+          </div>
+      
+          <!-- LinkedIn Button -->
+          <div class="contact-box">
+            <button class="linkedin-button" onclick="window.location.href='https://www.linkedin.com/in/mohamed-ashfaq';">
+              LinkedIn
+            </button>
+          </div>
+      
+          <!-- GitHub Button -->
+          <div class="contact-box">
+            <button class="github-button" onclick="window.location.href='https://github.com/ashfaqsde';">
+              GitHub
+            </button>
+          </div>
+      
+          <!-- WhatsApp Button -->
+          <div class="contact-box">
+            <button class="whatsapp-button" onclick="window.location.href='https://wa.me/+918903707362';">
+              WhatsApp
+            </button>
+          </div>
+      
+          <!-- Telegram Button -->
+          <div class="contact-box">
+            <button class="telegram-button" onclick="window.location.href='https://t.me/+918903707362';">
+              Telegram
+            </button>
+          </div>
+        </div>
+      </div>
+    
+</body>
+</html>
